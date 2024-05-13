@@ -15,11 +15,11 @@ const AllRoutes = () => {
             <Route path='/' element={<LayOut/>}>
                 <Route path='/' element={<HomePage/>}/>
                 <Route path='/login' element={<Login/>}/>
-                <Route path='/home' element={<Home/>}/>
                 <Route path='/products/:partOne/:partTwo/:url' element={<SingleProductDetailsPage/>} />
                 <Route path='/cart' element={<PrivateRoute><Cart/></PrivateRoute>}/>
 
             </Route>
+            
             
         </Routes>
     </div>

@@ -33,13 +33,21 @@ const NavBar = () => {
           
           <Flex w={'100%'} padding={'5px 5px' }  >
               <Flex  w={'25%'} pl={'25px'} >
-                  <Image src={logo}/>
+                <Link to={'/'}>
+                <Image src={logo}/>
+                </Link>
               </Flex>
               <Flex  w={'45%'} alignItems={'center'} justifyContent={'center'} padding={'0px 20px'} >
                 <SearchBar/>
               </Flex>
               <Flex w={'30%'} pr={'10px'}>
                   <Flex gap={'5px'} color={'white'} justifyContent={'right'} alignItems={'center'} w={'100%'}>
+                  <Flex >
+                    <Link to={'/'}>
+                    <Text cursor={'pointer'}  fontSize={'small'}>Home |</Text>
+                    </Link>
+                  </Flex>
+
                       <Flex> <Text cursor={'pointer'}  fontSize={'small'}>Select your Pin Code   |</Text></Flex>
 
                       <Flex gap={'5px'} >
